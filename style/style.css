@@ -12,7 +12,7 @@ body {
 
 #top-page-container {
   width: 100%;
-  height: auto;
+  height: 65vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,8 +69,6 @@ ul {
           justify-content: space-between;
   width: 100%;
   max-width: 35vw;
-  margin-top: 30px;
-  left: 2vw;
   height: 8vh;
 }
 
@@ -78,12 +76,11 @@ ul li {
   list-style: none;
   width: 100%;
   margin-left: 0%;
-  margin-right: 50px;
-  margin-top: auto;
+  margin-top: 6vh;
   margin-bottom: auto;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
 ul a {
@@ -93,7 +90,7 @@ ul a {
 }
 
 li:nth-child(1) {
-  margin-left: 184px;
+  margin-left: 170px;
 }
 
 a::after {
@@ -127,9 +124,10 @@ a:hover::after {
 }
 
 .slider .slider-items .item .image-slide {
-  width: 100%;
-  max-width: 60vw;
-  max-height: 500px;
+  width: 59vw;
+  max-width: auto;
+  height: 65vh;
+  max-height: auto;
   display: block;
 }
 
@@ -154,7 +152,7 @@ a:hover::after {
 .top-right-container {
   height: auto;
   width: 50vw;
-  max-height: 500px;
+  max-height: auto;
   position: relative;
   top: 0%;
   right: 0%;
@@ -162,14 +160,14 @@ a:hover::after {
 
 .slider-texts .item.active {
   display: block;
-  padding: 0 120px 20px 120px;
+  padding: 0 80px 20px 80px;
 }
 
 .slider-texts .item.active h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-align: justify;
-  padding-top: 5vh;
-  padding-bottom: 4vh;
+  padding-top: 80px;
+  padding-bottom: 20px;
 }
 
 .slider-texts .item.active p {
@@ -178,7 +176,6 @@ a:hover::after {
   line-height: 2;
   text-align: justify;
   width: 100%;
-  padding-top: 20px;
 }
 
 .slider-texts .item {
@@ -194,14 +191,13 @@ a:hover::after {
 }
 
 #text-shop-now {
-  margin-left: 120px;
+  margin-left: 80px;
   letter-spacing: 10px;
   height: 20px;
   padding: 2px;
   cursor: pointer;
-  margin-top: 20px;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.7rem;
+  font-weight: 600;
   display: block;
 }
 
@@ -240,7 +236,7 @@ a:hover::after {
       -ms-flex-align: center;
           align-items: center;
   height: 8vh;
-  width: 5vw;
+  width: 5.3vw;
 }
 
 #prevBtn:hover, #nextBtn:hover {
@@ -284,11 +280,11 @@ a:hover::after {
 }
 
 .bottom-img {
-  width: 100%;
+  width: 70vw;
   height: auto;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1200px) {
   #overlay-block {
     width: 100%;
     height: 100%;
@@ -467,6 +463,7 @@ a:hover::after {
   }
   .bottom-img {
     position: relative;
+    width: 100%;
   }
   #text-middle {
     padding-left: 0px;
@@ -485,7 +482,7 @@ a:hover::after {
   }
 }
 
-@media all and (max-width: 1400px) and (orientation: landscape) {
+@media all and (max-width: 1200px) and (orientation: landscape) {
   .slider-texts .item.active h1 {
     font-size: 2.5rem;
     text-align: justify;

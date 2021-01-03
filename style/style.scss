@@ -11,7 +11,7 @@ body{
 
 #top-page-container{
   width: 100%;
-  height: auto;
+  height: 65vh;
   display: flex;
   flex-direction: row;
 }
@@ -55,33 +55,29 @@ ul{
     justify-content: space-between;
     width: 100%;
     max-width: 35vw;
-    margin-top: 30px;
-    left: 2vw;
     height: 8vh;
 
     li{
         list-style: none;
         width: 100%;
         margin-left: 0%;
-        margin-right: 50px;
-        margin-top: auto;
+        margin-top: 6vh;
         margin-bottom: auto;
-        // height: auto;
-        // padding-right: 0%;
-        font-weight: bold;
+        font-weight: 600;
         text-align: center;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     a{
         text-decoration: none;
         color: white;
         display: inline;
+        
     }
 }
 
 li:nth-child(1){
-    margin-left: 184px;
+    margin-left: 170px;
 }
 
 a::after{
@@ -108,9 +104,10 @@ a:hover::after{
 }
 
 .slider .slider-items .item .image-slide{
-  width: 100%;
-  max-width: 60vw;
-  max-height: 500px;
+  width: 59vw;
+  max-width: auto;
+  height: 65vh;
+  max-height: auto;
   display: block;
 }
 
@@ -130,7 +127,7 @@ a:hover::after{
 .top-right-container {
   height: auto;
   width: 50vw;
-  max-height: 500px;
+  max-height: auto;
   position: relative;
   top: 0%;
   right: 0%;
@@ -138,13 +135,13 @@ a:hover::after{
 
 .slider-texts .item.active{
   display: block;
-  padding: 0 120px 20px 120px;
+  padding: 0 80px 20px 80px;
   
   h1{
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-align: justify;
-    padding-top: 5vh;
-    padding-bottom: 4vh;
+    padding-top: 80px;
+    padding-bottom: 20px;
   }
 
   p{
@@ -153,7 +150,6 @@ a:hover::after{
     line-height: 2;
     text-align: justify;
     width: 100%;
-    padding-top: 20px;
   }
 }
 
@@ -168,14 +164,13 @@ a:hover::after{
 }
 
 #text-shop-now{
-    margin-left: 120px;
+    margin-left: 80px;
     letter-spacing: 10px;
     height: 20px;
     padding: 2px;
     cursor: pointer;
-    margin-top: 20px;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 0.7rem;
+    font-weight: 600;
     display: block;
 }
 
@@ -203,7 +198,7 @@ a:hover::after{
   justify-content: center;
   align-items: center;
   height: 8vh;
-  width: 5vw;
+  width: 5.3vw;
 }
 
 #prevBtn:hover, #nextBtn:hover{
@@ -216,11 +211,9 @@ a:hover::after{
   flex-direction: row;
   width: 100%;
   height: 100%;
-  // bottom: 0%;
 }
 
 #text-middle{
-  // padding-left: 50px;
   text-align: center;
   width: 100%;
   height: auto;
@@ -243,12 +236,12 @@ a:hover::after{
 }
 
 .bottom-img{
-  width: 100%;
+  width: 70vw;
   height: auto;
 }
 
 //small mobile - portrait mode//
-@media all and (max-width:1400px){
+@media all and (max-width:1200px){
 
   #overlay-block{
     width: 100%;
@@ -279,7 +272,6 @@ a:hover::after{
   #top-page-container{
     display: flex;
     flex-direction: column;
-    // flex-wrap: nowrap;
     height: auto;
     position: relative;
 
@@ -319,7 +311,7 @@ a:hover::after{
       cursor: pointer;
     }
   }
-  
+
   .change #nav-ul{
     transform: translateX(0px);
   }
@@ -427,6 +419,7 @@ a:hover::after{
 
   .bottom-img{
     position: relative;
+    width: 100%;
   }
 
   #text-middle{
@@ -449,7 +442,7 @@ a:hover::after{
   }
 }
 
-@media all and (max-width:1400px) and (orientation:landscape){
+@media all and (max-width:1200px) and (orientation:landscape){
 
   .slider-texts .item.active{
     
