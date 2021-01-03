@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Room-Homepage</title>
+</head>
+
+<body>
+<!-- overlay -->
+<div id="container">
+    <div id="overlay">
+        <div id="overlay-block"></div>
+    </div>
+</div>
+
+<img src="ressources/logo.svg" alt="logo" id="logo">
+
+<nav  class="menu">
+    <div id="hamburger">
+        <div id="burger-menu"  onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+    </div>
+
+
+    <div id="burger-nav" onclick="onClickMenu()">
+        <ul id="nav-ul" onclick="onClickMenu()">
+            <li class="item-nav-burger">Home</li>
+            <li class="item-nav-burger">Shop</li>
+            <li class="item-nav-burger">About</li>
+            <li class="item-nav-burger">Contact</li>	
+        </ul>
+    </div>	
+</nav>
+
+<ul id="desktop-nav">
+    <li class="item-nav"><a href="#">home</a></li>
+    <li class="item-nav"><a href="#">shop</a></li>
+    <li class="item-nav"><a href="#">about</a></li>
+    <li class="item-nav"><a href="#">contact</a></li>
+</ul>
+
+
+<section id="top-page-container">
+<!-- image slideshow -->
+    <div class="top-left-container">     
+        <div class="slider">
+            <div class="slider-items">
+                <div class="item active">
+                    <img class="image-slide" src="ressources/desktop-image-hero-1.jpg">
+                    <img class="image-slide-mobile" src="ressources/mobile-image-hero-1.jpg">
+                </div>
+                <div class="item">
+                    <img class="image-slide" src="ressources/desktop-image-hero-2.jpg">
+                    <img class="image-slide-mobile" src="ressources/mobile-image-hero-2.jpg">
+                </div>
+                <div class="item">
+                    <img class="image-slide" src="ressources/desktop-image-hero-3.jpg">
+                    <img class="image-slide-mobile" src="ressources/mobile-image-hero-3.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-right-container">
+        <div class="slider-texts">
+            <div class="item active">
+                <h1 class="text-slide">Discover innovative ways to decorate</h1>
+                <p>We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
+            </div>
+            <div class="item">
+                <h1 class="text-slide">We are available all across the globe</h1>
+                <p>With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today.</p>
+            </div>
+            <div class="item">
+                <h1 class="text-slide">Manufactured with the best materials</h1>
+                <p>We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
+            </div>
+
+        <div id="Btn-shop-now">
+            <div id="text-shop-now">SHOP NOW
+            <img src="ressources/icon-arrow.svg" alt="arrow-shop-now" id="arrow-shop-now"></div>
+        </div>
+        <div id="Btn-slide">
+            <div id="prevBtn" class="left-slide">
+                <img src="ressources/icon-angle-left.svg" alt="angle-left" ></img></div>
+                <div id="nextBtn" class="right-slide">
+                <img src="ressources/icon-angle-right.svg" alt="angle-right "></img></div>
+        </div>
+    </div>
+</section>
+<div id="bottom-container">
+    <img class="bottom-img" id="bottom-img-dark" src="ressources/image-about-dark.jpg">
+    <div id="text-middle">
+        <h2>ABOUT OUR FURNITURE</h2>
+        <p>Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
+    </div>
+     <img class="bottom-img" id="bottom-img-light"src="ressources/image-about-light.jpg">
+</div>
+
+
+
+
+
+
+
+     
+
+
+
+<script src="style/app.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    
+</body>
+
+</html>
+
+
+
